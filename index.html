@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/styles.css" rel="stylesheet" type="text/css" media="all" />
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Brent's Cheese</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Brent's Cheese Shop</h1>
+      </div>
+      <div class="order-entry">
+        <form>
+          <h3>Please enter your shipping info:</h3>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input id="name" class="form-control" type="text" />
+          </div>
+          <div class="form-group">
+            <label for="street">Street address</label>
+            <input id="street" class="form-control" type="text" />
+          </div>
+          <div class="form-group">
+            <label for="city">City</label>
+            <input id="city" class="form-control" type="text" />
+          </div>
+          <h4>State</h4>
+          <select class="form-control" id="state">
+            <option>AR</option>
+            <option>LA</option>
+            <option>OK</option>
+            <option>TX</option>
+          </select>
+          <div class="form-group">
+            <label for="zip">Zip code</label>
+            <input id="zip" class="form-control" type="text" />
+          </div>
+          <h3>Please make your selection</h3>
+          <select class="form-control" id="cheese">
+            <option>Cheshire</option>
+            <option>Stilton</option>
+            <option>Double Gloucester</option>
+            <option>Cheddar</option>
+          </select>
+          <div class="form-group">
+            <label for="qty">Qty</label>
+            <input id="qty" class="form-control" type="text" />
+          </div>
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </div>
+      <p></p>
+      <div class="well confirmation">
+        <h2>Thank you!</h2>
+        <h3>Order confirmation</h3>
+        <ul>
+          <li>Name: <span id="conf-name"></span></li>
+          <li>Address: <span id="conf-address"></span></li>
+          <li>Purchase: <span id="conf-purchase"></span></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
